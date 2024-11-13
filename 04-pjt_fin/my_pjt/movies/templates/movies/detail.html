@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h1>deatil for no.{{movie.pk}}</h1>
+<p>제목 : {{movie.title}}</p>
+<p>내용 : {{movie.content}}</p>
+
+{% if movie.image %}
+<p><img src="{{movie.image.url}}" alt="img"></p>
+{% else %} <img src="{% static "assets/carrot.png" %}" alt="image_failed">
+
+{% endif %}
+
+<hr>
+<a href="{% url "movies:update" movie.pk %}">[update]</a>
+<a href="{% url "movies:delete" movie.pk%} ">[delete]</a>
+
+{% endblock content %}
+

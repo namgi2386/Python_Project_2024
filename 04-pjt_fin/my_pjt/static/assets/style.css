@@ -1,0 +1,31 @@
+* {
+    color: brown;
+}
+
+#base_net_logo {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
+.main_thumbnail {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.index_card_line {
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.index_card_div {
+    width: 19rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}

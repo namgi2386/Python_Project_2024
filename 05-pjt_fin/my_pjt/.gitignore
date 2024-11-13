@@ -1,0 +1,5 @@
+venv/
+tempREADME.md
+db.sqlite3
+*.pdf
+temp.py

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<form action="{% url "movies:update" movies.pk%}" method="post" enctype="multipart/form-data">
+    <h1>수정 페이지</h1>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="update">
+</form>
+
+{% endblock content %}

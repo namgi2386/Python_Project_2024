@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>트렌드 분석 애플리케이션</h1>
+    <a href="{% url "trends:index" %}">[main]</a>
+    <a href="{% url "trends:keyword" %}">[키워드추가]</a>
+    <a href="{% url "trends:crawling" %}">[크롤링]</a>
+    <a href="{% url "trends:crawling_histograms" %}">[인스타그램]</a>
+    <a href="{% url "trends:crawling_advanced" %}">[지난 1년 크롤링]</a>
+    <a href="{% url "trends:clearTrend" %}">[clearDB]</a>
+    <h5>keyword '윤희준' has been banned</h5>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,4 @@
+HAVE TO STUDY
+1. image stting for static, media
+2. compare create & update 
+3. 내장메서드

@@ -1,0 +1,129 @@
+* {
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro,
+.skills,
+.projects,
+.contact, 
+.subject,
+.etc {
+    height: 100%;
+    padding: 1rem;
+}
+
+
+.skills,
+.contact,
+.etc {
+    background-color: antiquewhite;
+}
+.footer-copyright {
+    background-color: rgb(48, 155, 155);
+}
+
+.left-side-icon {
+    display: flex;
+    flex-direction: column;
+}
+
+#front-icon {
+    font-size: 32px;
+    width: 48px;
+    height: 48px;
+}
+#intro-icon {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+.layered-image {
+    height: 100%;
+    background: 
+        linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgb(206, 197, 197) 20%),
+        url("critters.png");
+    background-size: cover;
+}
+
+.frontpage {
+    position: relative;
+}
+
+.front-main-figure {
+    position :relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) { /* md 이상 화면 크기 */
+    .front-main-figure {
+        height: 300px; /* 높이 제한 */
+    }
+}
+
+.front-main-figure img {
+    position : absolute;
+    height: auto;
+    width: 100%;
+    object-fit: cover; 
+    left: 0;
+}
+.text-box-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.front-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767.98px) {
+
+    #front-main-figure-img {
+        display: none;
+    }
+    
+    #left-side-icon {
+        display: none;
+    }
+    
+    #front-main-text-box {
+        width: 100%;
+        background-color: rgb(206, 197, 197);
+    }
+}
+
+#good-imoji {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.intro-text-imoji {
+    display: flex;
+}
+
+.stack-card {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+    height: 30rem;
+
+}
+.stack-card-init {
+    height: 4rem;
+    width: 4rem;
+}

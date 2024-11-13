@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h1>{{person.username}} 미니홈피</h1>
+    <hr>
+
+    <h2>{{person.username}}의 게시글</h2>
+    {% for board in person.board_set.all %}
+        <div>no : {{board.pk}}</div>
+        <a href="{% url "boards:detail" board.pk %}">
+            <h3>
+                {{board.title}}
+            </h3>
+        </a>
+        <hr>
+    {% endfor %}
+
+
+    <h2>{{person.username}}의 댓글</h2>
+    <ul>
+        {% for comment in person.comment_set.all %}
+        <li>
+            <span>
+                {{comment.board.title}}
+            </span>
+            <a href="{% url "boards:detail" comment.board.pk %}">
+                {{comment.content}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    <hr>
+
+    <div>
+        <div>
+            팔로잉 : {{person.following.all|length}} / 팔로워 : {{person.followers.all|length}}
+        </div>
+        {% if request.user != person %}
+        <div>
+            <form action="{% url "accounts:follow" person.pk %}" method='post'>
+                {% csrf_token %}
+                {% if request.user in person.followers.all %}
+                <input type="submit" value='언팔'>
+                {% else %}
+                <input type="submit" value="빨로윙">
+                {% endif %}
+            </form>
+        </div>
+        {% endif %}
+    </div>
+    <div>
+        좋아요 : {{person.board_set.count}}
+        <h2>{{person.username}}가 좋아하는 글</h2>
+        <ul>
+
+            {% for like_board in person.like_boards.all %}
+            <li>
+                <a href="{% url "boards:detail" like_board.pk %}">
+                    {{like_board.title}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock content %}

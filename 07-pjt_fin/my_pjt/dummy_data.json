@@ -1,0 +1,126 @@
+{
+    "products": [
+        {
+            "fin_prdt_cd": "FP001",
+            "kor_co_nm": "은행E",
+            "fin_prdt_nm": "상품명 1",
+            "etc_note": "설명 1에 대한 설명입니다.",
+            "join_deny": 3,
+            "join_member": "모든 고객",
+            "join_way": "온라인",
+            "spcl_cnd": "우대 조건 없음"
+        },
+        {
+            "fin_prdt_cd": "FP002",
+            "kor_co_nm": "은행A",
+            "fin_prdt_nm": "상품명 2",
+            "etc_note": "설명 2에 대한 설명입니다.",
+            "join_deny": 3,
+            "join_member": "모든 고객",
+            "join_way": "오프라인",
+            "spcl_cnd": "우대 조건 없음"
+        },
+        {
+            "fin_prdt_cd": "FP003",
+            "kor_co_nm": "은행A",
+            "fin_prdt_nm": "상품명 3",
+            "etc_note": "설명 3에 대한 설명입니다.",
+            "join_deny": 3,
+            "join_member": "모든 고객",
+            "join_way": "오프라인",
+            "spcl_cnd": "우대 조건 없음"
+        },
+        {
+            "fin_prdt_cd": "FP004",
+            "kor_co_nm": "은행A",
+            "fin_prdt_nm": "상품명 4",
+            "etc_note": "설명 4에 대한 설명입니다.",
+            "join_deny": 2,
+            "join_member": "모든 고객",
+            "join_way": "오프라인",
+            "spcl_cnd": "우대 조건 없음"
+        },
+        {
+            "fin_prdt_cd": "FP005",
+            "kor_co_nm": "은행B",
+            "fin_prdt_nm": "상품명 5",
+            "etc_note": "설명 5에 대한 설명입니다.",
+            "join_deny": 2,
+            "join_member": "모든 고객",
+            "join_way": "온라인",
+            "spcl_cnd": "우대 조건 없음"
+        }
+    ],
+    "options": [
+        {
+            "fin_prdt_cd": "FP002",
+            "intr_rate_type_nm": "정기적금",
+            "intr_rate": 1.53,
+            "intr_rate2": 1.61,
+            "save_trm": 12
+        },
+        {
+            "fin_prdt_cd": "FP004",
+            "intr_rate_type_nm": "정기적금",
+            "intr_rate": 4.39,
+            "intr_rate2": 3.18,
+            "save_trm": 36
+        },
+        {
+            "fin_prdt_cd": "FP003",
+            "intr_rate_type_nm": "정기적금",
+            "intr_rate": 4.12,
+            "intr_rate2": 2.5,
+            "save_trm": 36
+        },
+        {
+            "fin_prdt_cd": "FP005",
+            "intr_rate_type_nm": "정기적금",
+            "intr_rate": 4.93,
+            "intr_rate2": 3.43,
+            "save_trm": 24
+        },
+        {
+            "fin_prdt_cd": "FP001",
+            "intr_rate_type_nm": "정기적금",
+            "intr_rate": 1.4,
+            "intr_rate2": 5.98,
+            "save_trm": 24
+        },
+        {
+            "fin_prdt_cd": "FP005",
+            "intr_rate_type_nm": "정기적금",
+            "intr_rate": 4.61,
+            "intr_rate2": 5.17,
+            "save_trm": 12
+        },
+        {
+            "fin_prdt_cd": "FP001",
+            "intr_rate_type_nm": "정기적금",
+            "intr_rate": 1.69,
+            "intr_rate2": 1.9,
+            "save_trm": 6
+        },
+        {
+            "fin_prdt_cd": "FP002",
+            "intr_rate_type_nm": "정기적금",
+            "intr_rate": 3.32,
+            "intr_rate2": 3.36,
+            "save_trm": 36
+        },
+        {
+            "fin_prdt_cd": "FP005",
+            "intr_rate_type_nm": "정기적금",
+            "intr_rate": 2.34,
+            "intr_rate2": 5.96,
+            "save_trm": 36
+        },
+        {
+            "fin_prdt_cd": "FP005",
+            "intr_rate_type_nm": "정기적금",
+            "intr_rate": 3.53,
+            "intr_rate2": 4.54,
+            "save_trm": 24
+        }
+    ]
+}
